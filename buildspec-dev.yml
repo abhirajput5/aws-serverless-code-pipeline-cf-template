@@ -3,9 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      #- rm package-lock.json
+      - rm package-lock.json
       # - npm install --silent --progress=false -g npm
-      - npm install -g npm@14.17.0
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+      - nvm install 14
       
       ## Dependencies
       - npm install --silent --progress-false
