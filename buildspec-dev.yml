@@ -4,8 +4,8 @@ phases:
   install:
     commands:
       #- rm package-lock.json
-      - npm install --silent --progress=false -g npm
-      - npm install -g npm@latest
+      # - npm install --silent --progress=false -g npm
+      - npm install -g npm@14.17.0
       
       ## Dependencies
       - npm install --silent --progress-false
